@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrição 360 - Transforme Sua Saúde</title>
+  <meta name="description" content="Descubra o método completo para transformar sua saúde através da alimentação. Plano personalizado, receitas exclusivas e suporte 24h.">
+  <style>
+    :root {
+      --primary: #2ecc71;
+      --primary-dark: #27ae60;
+      --secondary: #3498db;
+      --dark: #2c3e50;
+      --light: #ecf0f1;
+      --gradient: linear-gradient(135deg, #2ecc71 0%, #3498db 100%);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--light);
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header {
+      background: var(--gradient);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.8rem; font-weight: bold; color: white; }
+    .logo span { color: var(--light); }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    .nav-links a:hover { opacity: 0.8; }
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(46,204,113,0.1) 0%, rgba(236,240,241,1) 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: var(--gradient);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(46,204,113,0.4);
+    }
+    .features {
+      padding: 80px 0;
+      background: white;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+      color: var(--dark);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    .feature-card {
+      background: var(--light);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .feature-card:hover { transform: translateY(-10px); }
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--primary-dark);
+    }
+    .cta {
+      padding: 100px 0;
+      text-align: center;
+      background: var(--gradient);
+      color: white;
+    }
+    .cta h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+    .btn-white {
+      background: white;
+      color: var(--primary);
+      padding: 18px 50px;
+      font-size: 1.2rem;
+    }
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      padding: 40px 0;
+      text-align: center;
+    }
+    .footer-links a {
+      color: var(--light);
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .nav-links { display: none; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Nutrição <span>360</span></div>
+      <div class="nav-links">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Transforme Sua Saúde Através Da Alimentação</h1>
+      <p>Descubra o método completo que já ajudou mais de 10.000 pessoas a alcançarem uma vida mais saudável e equilibrada, sem dietas restritivas.</p>
+      <a href="#cadastro" class="btn">Quero Transformar Minha Vida</a>
+    </div>
+  </section>
+
+  <section class="features" id="beneficios">
+    <div class="container">
+      <h2 class="section-title">Por que escolher o Nutrição 360?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>Plano Personalizado</h3>
+          <p>Cardápio elaborado especialmente para suas necessidades, objetivos e preferências alimentares.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🍎</div>
+          <h3>Receitas Exclusivas</h3>
+          <p>Mais de 500 receitas saudáveis, deliciosas e fáceis de preparar, aprovadas por nutricionistas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Suporte 24h</h3>
+          <p>Acompanhamento diário via app, com lembretes, dicas e suporte de especialistas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Resultados Garantidos</h3>
+          <p>Método baseado em evidências científicas, com comprovação de resultados em 30 dias.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💪</div>
+          <h3>Energia e Vitalidade</h3>
+          <p>Aumento significativo de energia, disposição e qualidade de vida desde a primeira semana.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Sem Dietas Restritivas</h3>
+          <p>Método sustentável que você mantém para sempre, sem passar fome ou cortar alimentos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cadastro">
+    <div class="container">
+      <h2>Pronto Para Começar Sua Transformação?</h2>
+      <p>Garanta agora sua vaga no Nutrição 360 e receba 50% de desconto no primeiro mês!</p>
+      <a href="#" class="btn btn-white">QUERO MEU DESCONTO AGORA</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nutrição 360. Todos os direitos reservados.</p>
+      <div class="footer-links" style="margin-top: 20px;">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
